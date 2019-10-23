@@ -1,0 +1,411 @@
+body{
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+
+}
+p{
+    margin: 0 0 10px 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header{
+    
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0;
+    align-items: center;
+}
+.header__img{
+    border: 2px solid #053007;
+    border-radius: 50%;
+}
+
+.nav{
+    display: flex;
+
+}
+.nav__link{
+    font-size: 40px;
+    color: green;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    opacity: 0.75;
+}
+.nav__link::first-letter{
+    margin-left: 0;
+    color: #053007;
+}
+.nav__link:hover{
+    opacity: 1;
+}
+
+
+.content__wrap{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px,462px));
+    grid-gap: 15px;
+    margin-top: 125px;
+    margin-bottom: 125px;
+   
+    margin-left: 300px;
+}
+
+.wrap{
+    max-width: 800px;
+    min-width: 290px;
+   
+}
+
+.content-link{
+    grid-column: span 1;
+    padding-left: 40px;
+    padding-bottom: 105px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: url('proper-nutrition-4235473_960_720.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 10px;
+
+    
+
+}
+
+.content-link:nth-child(2){
+    background: url('images\ \(1\).jpg') no-repeat ;
+    background-size: cover;
+    border-radius: 10px;
+}
+.content-link:nth-child(3){
+    background: url('images\ \(2\).jpg') no-repeat ;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.content-link:nth-child(4){
+    background: url('images\ \(3\).jpg') ;
+    border-radius: 10px;
+    background-size: cover;
+}
+.content-link:nth-child(5){
+    background: url('proper-nutrition-4235473_960_720.jpg') ;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.content-link:nth-child(6){
+    background: url('poleznaya-eda-800x500.jpg');
+    border-radius: 10px;
+    
+}
+.content-link:nth-child(1){
+    padding-top: 64.8%;
+}
+
+.content-link2{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.content-link6{
+    padding-top: 17.9%;
+  
+}
+
+
+.content-name{
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 16px;
+    color: white;
+    transition-duration: 500ms;
+    transition-property: color;
+
+}
+.big{
+    font-size: 60px;
+    color: #053007;
+    text-align: center;
+    margin-bottom: 20px;
+   
+    letter-spacing: 24px;
+}
+.content-link:hover .content-name{
+    color: #053007;
+}
+.content-link:hover .big{
+    color: white;
+}
+
+.content-link::after{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(0deg, rgb(236, 215, 215) 0%, rgba(26,26,26,0) 100%);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.features{
+    display: flex;
+    margin: 100px 0;
+    flex-wrap: wrap;
+
+}
+.features__item{
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 20px;
+    margin: 25px 0;
+
+}
+.features__image{
+    margin-bottom: 20px;
+}
+
+.features__title{
+    font-weight: 700;
+    font-size: 34px;
+    color:green;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+
+
+}
+.features__text{
+    line-height: 21px;
+
+}
+
+.works{
+    display: flex;
+    flex-wrap: wrap;
+}
+.works__item{
+    width: 25%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+
+}
+.works__image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+
+}
+
+.works__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(53, 202, 53, 0.6);
+    opacity: 0
+
+}
+.works__content:hover{
+    opacity: 1;
+}
+.works__title{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.works__text{
+    color: white;
+
+}
+
+.team{
+    margin: 100px 0;
+}
+.team__inner{
+    display: flex;
+    
+
+    
+
+}
+.team__item{
+    width: 25%;
+    border: 1px solid green;
+    border-radius: 20px;
+    margin: 0 30px;
+}
+.team__image{
+    border-radius: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+.team__title{
+    color: red;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10 px;
+}
+.team__pos{
+    text-align: center;
+    margin-top: 10px;
+
+}
+.team__text{
+    text-align: center;
+    margin: 10px 10px;
+
+}
+.team__header{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-weight: 300;
+    color: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+    opacity: 1;
+  
+}
+.team__header:hover{
+    color: green;
+    transform: translateY(10px);
+    margin-bottom: 40px;
+}
+
+.testi{
+    background:url('poleznaya-eda-800x500.jpg') no-repeat center;
+    background-size: cover;
+    margin-bottom: 30px;
+    
+    overflow: hidden;
+
+}
+
+.testi__inner{
+    display: flex;
+   
+}
+.testi__photo{
+    width: 50%;
+    height: 500px;
+    position: relative;
+    
+    border-radius: 20px;
+
+}
+.testi__content{
+    width: 50%;
+    font-size: 36px;
+    line-height: 1.2;
+    font-style: italic;
+    color: white;
+    margin-left: 130px;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+.testi__image{
+    position: absolute;
+    right: 50px;
+    left: 15px;
+    z-index: 1;
+    opacity: 1;
+    border: 2px solid red;
+    border-radius: 30px;
+    opacity: .9;
+
+    
+
+    
+}
+
+.down{
+    margin: 90px 0;
+    text-align: center;
+    border: 1px solid green;
+    background-color: white;
+    border-radius: 50px;
+}
+.down__subtitle{
+    font-size: 60px;
+    color: green;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+
+
+}
+
+.down__title{
+    font-size: 30px;
+    color: #053007;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid green;
+    margin-top: 200px;
+    padding: 30px 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: #eeea0c;
+    color: green;
+    font-weight: 700;
+}
+.btn:hover{
+   font-size: 35px;
+}
+
+
+
